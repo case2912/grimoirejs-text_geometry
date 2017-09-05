@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <script src="https://unpkg.com/grimoirejs-preset-basic/register/grimoire-preset-basic.js"></script>
+  <script src="./../register/grimoire-text_geometry.js"></script>
+</head>
+
+<body>
+  <script type="text/goml">
+    <goml>
+      <geometry type="letter" name="text-text" letters="This is test.\nTest is successful." back="true" textBaseline="middle" textAlign="center"></geometry>
+      <scene>
+        <camera>
+          <camera.components>
+            <MouseCameraControl></MouseCameraControl>
+          </camera.components>
+        </camera>
+        <text geometry="text-text"></text>
+      </scene>
+    </goml>
+  </script>
+</body>
+
+</html>
